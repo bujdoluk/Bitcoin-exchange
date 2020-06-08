@@ -1,0 +1,289 @@
+:root {
+  --color-grey: #d8dbe2;
+  --color-steelblue: #dbe3f8;
+  --color-blue: #004492;
+  --color-charcoal: #373f51;
+  --color-black: #1b1b1e; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.6; }
+
+.cryptocurrencies {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 3rem; }
+  .cryptocurrencies h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem; }
+  .cryptocurrencies p {
+    font-size: 1.5rem;
+    margin-bottom: 4rem;
+    text-align: center; }
+  .cryptocurrencies .link {
+    margin: 0 auto; }
+  .cryptocurrencies a {
+    font-size: 2.5rem;
+    color: white;
+    background-color: var(--color-blue);
+    text-decoration: none;
+    border: 0.2rem solid var(--color-blue);
+    border-radius: 0.3rem;
+    margin-right: 5rem;
+    padding: 0.5rem 1rem; }
+
+.footer {
+  background-color: var(--color-black);
+  padding: 4rem; }
+  .footer-item {
+    font-size: 1.3rem;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch; }
+  .footer ul {
+    list-style: none;
+    margin-left: 2.3rem; }
+  .footer span {
+    font-size: 1.7rem;
+    font-weight: bold; }
+  .footer .border {
+    margin-top: 6rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8); }
+  .footer p {
+    font-size: 1.2rem;
+    color: white;
+    margin: 2rem 0; }
+
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/austin-distel-EMPZ7yRZoGw-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 60vh;
+  width: 100%; }
+  .header .heading-1 {
+    font-size: 6rem;
+    font-family: inherit;
+    color: white;
+    text-align: center;
+    padding-top: 10rem; }
+  .header__button {
+    display: flex;
+    justify-content: center; }
+    .header__button-left {
+      font-size: 2.5rem;
+      color: white;
+      background-color: var(--color-blue);
+      text-decoration: none;
+      border: 0.2rem solid var(--color-blue);
+      margin-right: 5rem;
+      padding: 0.5rem 1rem;
+      margin-top: 8rem; }
+    .header__button-right {
+      font-size: 2.5rem;
+      color: white;
+      text-decoration: none;
+      border: 0.2rem solid white;
+      padding: 0.5rem 1rem;
+      margin-top: 8rem; }
+
+.navigation {
+  height: 10vh;
+  padding: 0 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+  .navigation h1 {
+    font-size: 2rem;
+    align-self: center; }
+  .navigation__logo {
+    display: flex;
+    flex-direction: row; }
+    .navigation__logo img {
+      width: 4.5rem;
+      height: 4.5rem;
+      margin-right: 2rem; }
+  .navigation__bar {
+    display: flex;
+    flex-direction: row;
+    list-style: none; }
+    .navigation__bar-link {
+      font-size: 1.5rem;
+      font-family: inherit;
+      font-weight: 400;
+      text-decoration: none;
+      color: black; }
+    .navigation__bar-item:not(:last-child) {
+      margin-right: 2rem; }
+
+.services {
+  background-color: var(--color-cadetblue);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .services h1 {
+    flex: 0 0 100%;
+    padding: 5rem 2rem 2rem 2rem;
+    text-align: center;
+    font-size: 4rem; }
+  .services__part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 33%;
+    padding: 0 3rem;
+    transition: all 1s; }
+    .services__part img {
+      width: 4.5rem;
+      height: 4.5rem;
+      margin-bottom: 4rem; }
+    .services__part img:hover {
+      transform: scale(1.2); }
+    .services__part h3 {
+      font-size: 2.5rem;
+      margin-top: -2rem;
+      margin-bottom: 3rem; }
+    .services__part p {
+      font-size: 1.5rem;
+      font-family: "Open Sans";
+      margin-bottom: 4rem; }
+
+.smart__contracts {
+  background-color: #d5edf8f1;
+  padding: 7rem;
+  display: grid;
+  grid-template-rows: 1;
+  grid-template-columns: 45% 50%;
+  grid-gap: 10rem; }
+  .smart__contracts img {
+    height: 50rem;
+    width: 25rem;
+    justify-self: end;
+    align-self: end; }
+  .smart__contracts h2 {
+    font-size: 3rem;
+    text-align: start;
+    margin-bottom: 4rem; }
+  .smart__contracts ul {
+    padding: 2rem; }
+  .smart__contracts li {
+    font-size: 1.5rem;
+    padding: 0.5rem; }
+  .smart__contracts li:last-of-type {
+    margin-bottom: 5rem; }
+  .smart__contracts span {
+    font-size: 2.2rem;
+    font-weight: bold; }
+  .smart__contracts ul .btn {
+    font-size: 2.5rem;
+    color: white;
+    background-color: var(--color-blue);
+    text-decoration: none;
+    border: 0.2rem solid var(--color-blue);
+    border-radius: 0.3rem;
+    margin-right: 5rem;
+    padding: 0.5rem 1rem; }
+
+.testimonials {
+  background-color: var(--color-steelblue);
+  clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0 100%); }
+  .testimonials .slideshow-container {
+    position: relative;
+    background: #d5edf8f1; }
+  .testimonials .mySlides {
+    display: none;
+    padding: 8rem;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column; }
+  .testimonials .prev,
+  .testimonials .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin: -3rem 3rem 0 3rem;
+    padding: 1.6rem;
+    color: #1a068b;
+    font-weight: bold;
+    font-size: 2rem;
+    border-radius: 3px 3px 3px 3px;
+    user-select: none; }
+  .testimonials .next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px; }
+  .testimonials .prev:hover,
+  .testimonials .next:hover {
+    background-color: rgba(6, 43, 112, 0.8);
+    color: white; }
+  .testimonials .dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #aed1ff; }
+  .testimonials .dot {
+    cursor: pointer;
+    height: 1.5rem;
+    width: 1.5rem;
+    margin: 0 0.2rem;
+    background-color: #d5edf8f1;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease; }
+  .testimonials .active,
+  .testimonials .dot:hover {
+    background-color: #004492; }
+  .testimonials q {
+    font-style: italic;
+    margin-bottom: 2rem; }
+  .testimonials img {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 100rem; }
+  .testimonials .author {
+    color: cornflowerblue; }
+
+.wallets {
+  background-color: white;
+  padding: 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 2;
+  grid-gap: 7rem; }
+  .wallets__content {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center; }
+    .wallets__content img {
+      height: 6rem;
+      width: 6rem; }
+    .wallets__content h3 {
+      font-size: 2.5rem;
+      text-align: center;
+      margin: 3rem; }
+    .wallets__content p {
+      font-size: 1.5rem;
+      text-align: initial; }
