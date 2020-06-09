@@ -34,10 +34,16 @@ body {
     font-size: 3rem;
     text-align: center;
     margin-bottom: 2rem; }
+    @media only screen and (max-width: 53.1rem) {
+      .cryptocurrencies h2 {
+        font-size: 2.2rem; } }
   .cryptocurrencies p {
     font-size: 1.5rem;
     margin-bottom: 4rem;
     text-align: center; }
+    @media only screen and (max-width: 53.1rem) {
+      .cryptocurrencies p {
+        font-size: 1.3rem; } }
   .cryptocurrencies .link {
     margin: 0 auto; }
   .cryptocurrencies a {
@@ -49,6 +55,9 @@ body {
     border-radius: 0.3rem;
     margin-right: 5rem;
     padding: 0.5rem 1rem; }
+    @media only screen and (max-width: 37.5rem) {
+      .cryptocurrencies a {
+        font-size: 1.8rem; } }
 
 .footer {
   background-color: var(--color-black);
@@ -58,7 +67,8 @@ body {
     color: white;
     display: flex;
     flex-direction: row;
-    align-items: stretch; }
+    align-items: stretch;
+    flex-wrap: wrap; }
   .footer ul {
     list-style: none;
     margin-left: 2.3rem; }
@@ -78,7 +88,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 60vh;
   width: 100%; }
   .header .heading-1 {
     font-size: 6rem;
@@ -86,6 +95,15 @@ body {
     color: white;
     text-align: center;
     padding-top: 10rem; }
+    @media only screen and (max-width: 68.75rem) {
+      .header .heading-1 {
+        font-size: 5rem; } }
+    @media only screen and (max-width: 53.1rem) {
+      .header .heading-1 {
+        font-size: 3.5rem; } }
+    @media only screen and (max-width: 37.5rem) {
+      .header .heading-1 {
+        font-size: 2.5rem; } }
   .header__button {
     display: flex;
     justify-content: center; }
@@ -97,14 +115,22 @@ body {
       border: 0.2rem solid var(--color-blue);
       margin-right: 5rem;
       padding: 0.5rem 1rem;
-      margin-top: 8rem; }
+      margin-top: 8rem;
+      margin-bottom: 2rem; }
+      @media only screen and (max-width: 37.5rem) {
+        .header__button-left {
+          font-size: 1.8rem; } }
     .header__button-right {
       font-size: 2.5rem;
       color: white;
       text-decoration: none;
       border: 0.2rem solid white;
       padding: 0.5rem 1rem;
-      margin-top: 8rem; }
+      margin-top: 8rem;
+      margin-bottom: 2rem; }
+      @media only screen and (max-width: 37.5rem) {
+        .header__button-right {
+          font-size: 1.8rem; } }
 
 .navigation {
   height: 10vh;
@@ -113,9 +139,15 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center; }
+  @media only screen and (max-width: 37.5rem) {
+    .navigation {
+      padding: 0 1.3rem; } }
   .navigation h1 {
     font-size: 2rem;
     align-self: center; }
+    @media only screen and (max-width: 37.5rem) {
+      .navigation h1 {
+        font-size: 1.4rem; } }
   .navigation__logo {
     display: flex;
     flex-direction: row; }
@@ -123,6 +155,11 @@ body {
       width: 4.5rem;
       height: 4.5rem;
       margin-right: 2rem; }
+      @media only screen and (max-width: 37.5rem) {
+        .navigation__logo img {
+          width: 3.6rem;
+          height: 3.6rem;
+          margin-right: 1rem; } }
   .navigation__bar {
     display: flex;
     flex-direction: row;
@@ -133,6 +170,9 @@ body {
       font-weight: 400;
       text-decoration: none;
       color: black; }
+      @media only screen and (max-width: 37.5rem) {
+        .navigation__bar-link {
+          font-size: 1.25rem; } }
     .navigation__bar-item:not(:last-child) {
       margin-right: 2rem; }
 
@@ -141,11 +181,17 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap; }
+  @media only screen and (max-width: 45rem) {
+    .services {
+      flex-direction: column; } }
   .services h1 {
     flex: 0 0 100%;
     padding: 5rem 2rem 2rem 2rem;
     text-align: center;
     font-size: 4rem; }
+    @media only screen and (max-width: 68.75rem) {
+      .services h1 {
+        font-size: 3rem; } }
   .services__part {
     display: flex;
     flex-direction: column;
@@ -163,10 +209,19 @@ body {
       font-size: 2.5rem;
       margin-top: -2rem;
       margin-bottom: 3rem; }
+      @media only screen and (max-width: 68.75rem) {
+        .services__part h3 {
+          font-size: 1.8rem; } }
+      @media only screen and (max-width: 53.1rem) {
+        .services__part h3 {
+          font-size: 1.4rem; } }
     .services__part p {
       font-size: 1.5rem;
       font-family: "Open Sans";
       margin-bottom: 4rem; }
+      @media only screen and (max-width: 68.75rem) {
+        .services__part p {
+          font-size: 1.3rem; } }
 
 .smart__contracts {
   background-color: #d5edf8f1;
@@ -175,25 +230,46 @@ body {
   grid-template-rows: 1;
   grid-template-columns: 45% 50%;
   grid-gap: 10rem; }
+  @media only screen and (max-width: 45rem) {
+    .smart__contracts {
+      grid-template-columns: 100%; } }
   .smart__contracts img {
     height: 50rem;
     width: 25rem;
     justify-self: end;
     align-self: end; }
+    @media only screen and (max-width: 62.5rem) {
+      .smart__contracts img {
+        align-self: center; } }
+    @media only screen and (max-width: 45rem) {
+      .smart__contracts img {
+        display: none; } }
   .smart__contracts h2 {
     font-size: 3rem;
     text-align: start;
     margin-bottom: 4rem; }
+    @media only screen and (max-width: 53.1rem) {
+      .smart__contracts h2 {
+        font-size: 2.2rem; } }
+    @media only screen and (max-width: 45rem) {
+      .smart__contracts h2 {
+        text-align: center; } }
   .smart__contracts ul {
     padding: 2rem; }
   .smart__contracts li {
     font-size: 1.5rem;
     padding: 0.5rem; }
+    @media only screen and (max-width: 53.1rem) {
+      .smart__contracts li {
+        font-size: 1.2rem; } }
   .smart__contracts li:last-of-type {
     margin-bottom: 5rem; }
   .smart__contracts span {
     font-size: 2.2rem;
     font-weight: bold; }
+    @media only screen and (max-width: 53.1rem) {
+      .smart__contracts span {
+        font-size: 1.7rem; } }
   .smart__contracts ul .btn {
     font-size: 2.5rem;
     color: white;
@@ -203,6 +279,13 @@ body {
     border-radius: 0.3rem;
     margin-right: 5rem;
     padding: 0.5rem 1rem; }
+    @media only screen and (max-width: 53.1rem) {
+      .smart__contracts ul .btn {
+        font-size: 1.7rem; } }
+  @media only screen and (max-width: 45rem) {
+    .smart__contracts p {
+      font-size: 1.7rem;
+      text-align: center; } }
 
 .testimonials {
   background-color: var(--color-steelblue);
@@ -258,12 +341,22 @@ body {
   .testimonials q {
     font-style: italic;
     margin-bottom: 2rem; }
+    @media only screen and (max-width: 53.1rem) {
+      .testimonials q {
+        font-size: 1.5rem; } }
   .testimonials img {
     height: 6rem;
     width: 6rem;
     border-radius: 100rem; }
+    @media only screen and (max-width: 53.1rem) {
+      .testimonials img {
+        height: 5rem;
+        width: 5rem; } }
   .testimonials .author {
     color: cornflowerblue; }
+    @media only screen and (max-width: 53.1rem) {
+      .testimonials .author {
+        font-size: 1.5rem; } }
 
 .wallets {
   background-color: white;
@@ -272,18 +365,43 @@ body {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 2;
   grid-gap: 7rem; }
+  @media only screen and (max-width: 45rem) {
+    .wallets {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 3;
+      grid-gap: 5rem; } }
   .wallets__content {
     display: flex;
     flex-direction: column;
     align-content: space-around;
-    align-items: center; }
+    align-items: center;
+    flex-wrap: wrap; }
     .wallets__content img {
       height: 6rem;
       width: 6rem; }
+      @media only screen and (max-width: 68.75rem) {
+        .wallets__content img {
+          height: 4.8rem;
+          width: 4.8rem; } }
+      @media only screen and (max-width: 53.1rem) {
+        .wallets__content img {
+          height: 3.5rem;
+          width: 3.5rem; } }
     .wallets__content h3 {
       font-size: 2.5rem;
       text-align: center;
       margin: 3rem; }
+      @media only screen and (max-width: 68.75rem) {
+        .wallets__content h3 {
+          font-size: 1.8rem;
+          margin: 2rem; } }
+      @media only screen and (max-width: 53.1rem) {
+        .wallets__content h3 {
+          font-size: 1.4rem;
+          margin: 1.6rem; } }
     .wallets__content p {
       font-size: 1.5rem;
       text-align: initial; }
+      @media only screen and (max-width: 53.1rem) {
+        .wallets__content p {
+          font-size: 1.3rem; } }

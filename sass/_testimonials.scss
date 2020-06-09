@@ -71,15 +71,28 @@
     q {
         font-style: italic;
         margin-bottom: 2rem;
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: 1.5rem;
+        }
     }
 
     img {
         height: 6rem;
         width: 6rem;
         border-radius: 100rem;
+
+        @media only screen and (max-width: $bp-small) {
+            height: 5rem;
+            width: 5rem;
+        }
     }
 
     .author {
         color: cornflowerblue;
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: 1.5rem;
+        }
     }
 }

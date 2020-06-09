@@ -6,6 +6,13 @@
     --color-black: #1b1b1e;
 }
 
+// BREAKPOINTS
+$bp-big: 68.75rem; // 1100px
+$bp-medium: 62.5rem; // 1000px
+$bp-small: 53.1rem; // 850px
+$bp-smaller: 45rem; // 720px
+$bp-smallest: 37.5rem; // 600px
+
 * {
     margin: 0;
     padding: 0;

@@ -5,7 +5,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
 
-    height: 60vh;
+    //height: 60vh;
     width: 100%;
 
     .heading-1 {
@@ -14,6 +14,18 @@
         color: white;
         text-align: center;
         padding-top: 10rem;
+
+        @media only screen and (max-width: $bp-big) {
+            font-size: 5rem;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: 3.5rem;
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+            font-size: 2.5rem;
+        }
     }
 
     &__button {
@@ -29,6 +41,11 @@
             margin-right: 5rem;
             padding: 0.5rem 1rem;
             margin-top: 8rem;
+            margin-bottom: 2rem;
+
+            @media only screen and (max-width: $bp-smallest) {
+                font-size: 1.8rem;
+            }
         }
 
         &-right {
@@ -38,6 +55,11 @@
             border: 0.2rem solid white;
             padding: 0.5rem 1rem;
             margin-top: 8rem;
+            margin-bottom: 2rem;
+
+            @media only screen and (max-width: $bp-smallest) {
+                font-size: 1.8rem;
+            }
         }
     }
 }

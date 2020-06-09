@@ -7,9 +7,17 @@
     justify-content: space-between;
     align-items: center;
 
+    @media only screen and (max-width: $bp-smallest) {
+        padding: 0 1.3rem;
+    }
+
     h1 {
         font-size: 2rem;
         align-self: center;
+
+        @media only screen and (max-width: $bp-smallest) {
+            font-size: 1.4rem;
+        }
     }
 
     &__logo {
@@ -20,6 +28,12 @@
             width: 4.5rem;
             height: 4.5rem;
             margin-right: 2rem;
+
+            @media only screen and (max-width: $bp-smallest) {
+                width: 3.6rem;
+                height: 3.6rem;
+                margin-right: 1rem;
+            }
         }
     }
 
@@ -34,6 +48,10 @@
             font-weight: 400;
             text-decoration: none;
             color: black;
+
+            @media only screen and (max-width: $bp-smallest) {
+                font-size: 1.25rem;
+            }
         }
 
         &-item:not(:last-child) {

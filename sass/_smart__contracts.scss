@@ -7,17 +7,37 @@
     grid-template-columns: 45% 50%;
     grid-gap: 10rem;
 
+    @media only screen and (max-width: $bp-smaller) {
+        grid-template-columns: 100%;
+    }
+
     img {
         height: 50rem;
         width: 25rem;
         justify-self: end;
         align-self: end;
+
+        @media only screen and (max-width: $bp-medium) {
+            align-self: center;
+        }
+
+        @media only screen and (max-width: $bp-smaller) {
+            display: none;
+        }
     }
 
     h2 {
         font-size: 3rem;
         text-align: start;
         margin-bottom: 4rem;
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: 2.2rem;
+        }
+
+        @media only screen and (max-width: $bp-smaller) {
+            text-align: center;
+        }
     }
 
     ul {
@@ -28,6 +48,10 @@
     li {
         font-size: 1.5rem;
         padding: 0.5rem;
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: 1.2rem;
+        }
     }
 
     li:last-of-type {
@@ -37,6 +61,10 @@
     span {
         font-size: 2.2rem;
         font-weight: bold;
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: 1.7rem;
+        }
     }
 
     ul .btn {
@@ -48,5 +76,16 @@
         border-radius: 0.3rem;
         margin-right: 5rem;
         padding: 0.5rem 1rem;
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: 1.7rem;
+        }
+    }
+
+    p {
+        @media only screen and (max-width: $bp-smaller) {
+            font-size: 1.7rem;
+            text-align: center;
+        }
     }
 }
