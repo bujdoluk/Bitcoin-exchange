@@ -56,6 +56,11 @@
             font-size: 1.5rem;
             text-align: initial;
 
+            -moz-hyphens: auto;
+            -ms-hyphens: auto;
+            -webkit-hyphens: auto;
+            hyphens: auto;
+
             @media only screen and (max-width: $bp-small) {
                 font-size: 1.3rem;
             }

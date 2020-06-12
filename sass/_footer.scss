@@ -32,5 +32,10 @@
         font-size: 1.2rem;
         color: white;
         margin: 2rem 0;
+
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+        -webkit-hyphens: auto;
+        hyphens: auto;
     }
 }

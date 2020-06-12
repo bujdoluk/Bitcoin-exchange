@@ -81,7 +81,11 @@ body {
   .footer p {
     font-size: 1.2rem;
     color: white;
-    margin: 2rem 0; }
+    margin: 2rem 0;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto; }
 
 .header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/austin-distel-EMPZ7yRZoGw-unsplash.jpg");
@@ -218,7 +222,11 @@ body {
     .services__part p {
       font-size: 1.5rem;
       font-family: "Open Sans";
-      margin-bottom: 4rem; }
+      margin-bottom: 4rem;
+      -moz-hyphens: auto;
+      -ms-hyphens: auto;
+      -webkit-hyphens: auto;
+      hyphens: auto; }
       @media only screen and (max-width: 68.75rem) {
         .services__part p {
           font-size: 1.3rem; } }
@@ -401,7 +409,11 @@ body {
           margin: 1.6rem; } }
     .wallets__content p {
       font-size: 1.5rem;
-      text-align: initial; }
+      text-align: initial;
+      -moz-hyphens: auto;
+      -ms-hyphens: auto;
+      -webkit-hyphens: auto;
+      hyphens: auto; }
       @media only screen and (max-width: 53.1rem) {
         .wallets__content p {
           font-size: 1.3rem; } }
