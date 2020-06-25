@@ -1,11 +1,13 @@
 .navigation {
-    height: 10vh;
+    height: 7vh;
     padding: 0 4rem;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+    position: absolute;
 
     @media only screen and (max-width: $bp-smallest) {
         padding: 0 1.3rem;
@@ -42,20 +44,45 @@
         flex-direction: row;
         list-style: none;
 
+        &-item {
+            display: block;
+            padding: 1.5rem 0.5rem 0 0.5rem;
+        }
+
         &-link {
             font-size: 1.5rem;
             font-family: inherit;
             font-weight: 400;
             text-decoration: none;
             color: black;
+            padding: 0 1rem;
 
             @media only screen and (max-width: $bp-smallest) {
                 font-size: 1.25rem;
             }
         }
 
-        &-item:not(:last-child) {
-            margin-right: 2rem;
+        &-link::after {
+            content: "";
+            display: block;
+            margin-top: 0.2rem;
+            width: 0;
+            height: 3px;
+            background: var(--color-blue);
+            transition: width 0.3s;
+        }
+
+        &-link:hover::after {
+            width: 100%;
         }
     }
+}
+
+// Sticky navbar
+#navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: white;
+    z-index: 50;
 }

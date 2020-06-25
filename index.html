@@ -13,26 +13,27 @@
 </head>
 
 <body>
-    <nav class="navigation">
+    <nav class="navigation" id="navbar">
         <div class="navigation__logo">
             <img src="img/cryptocurrency.svg" alt="Bitcoin logo">
             <h1>Bitcoin Exchange</h1>
         </div>
         <ul class="navigation__bar">
-            <li class="navigation__bar-item"><a href="#" class="navigation__bar-link">Home</a></li>
-            <li class="navigation__bar-item"><a href="#" class="navigation__bar-link">Articles</a></li>
-            <li class="navigation__bar-item"><a href="#" class="navigation__bar-link">About us</a></li>
+            <li class="navigation__bar-item"><a href="#services" class="navigation__bar-link">Services</a></li>
+            <li class="navigation__bar-item"><a href="#features" class="navigation__bar-link">Features</a></li>
+            <li class="navigation__bar-item"><a href="#demo" class="navigation__bar-link">Demo</a></li>
+            <li class="navigation__bar-item"><a href="#trade" class="navigation__bar-link">How to trade</a></li>
             <li class="navigation__bar-item"><a href="#" class="navigation__bar-link">Contact us</a></li>
         </ul>
     </nav>
     <header class="header">
-        <h1 class="heading-1">Welcome to Bitcoin Exchange</h1>
+        <h1 class="heading-1 animate__animated animate__bounce">Welcome to Bitcoin Exchange</h1>
         <div class="header__button">
             <a href="#" class="header__button-left">Start here</a>
             <a href="#" class="header__button-right">Read more</a>
         </div>
     </header>
-    <section class="services">
+    <section class="services" id="services">
         <h1>Services</h1>
         <div class="services__part">
             <img src="img/stats.svg" alt="Business">
@@ -88,42 +89,42 @@
             <span class="dot" onclick="currentSlide(3)"></span>
         </div>
     </section>
-    <section class="wallets">
-        <div class="wallets__content">
+    <section class="features" id="features">
+        <div class="features__content">
             <img src="img/assets.svg" alt="dsa">
             <h3>Easy investing</h3>
             <p>Just with few clicks you can invest in dynamic portfolio of exclusive cryptocurrencies.</p>
         </div>
-        <div class="wallets__content">
+        <div class="features__content">
             <img src="img/risk.svg" alt="dsa">
             <h3>Minimal risk</h3>
             <p>Your portfolio is design so it can track the whole market cap and not rely solely on individual
                 cryptocurrencies.
             </p>
         </div>
-        <div class="wallets__content">
+        <div class="features__content">
             <img src="img/folders.svg" alt="dsa">
             <h3>Direct ownership</h3>
             <p>You always own your cryptocurrencies directly, not through collective investments.</p>
         </div>
-        <div class="wallets__content">
+        <div class="features__content">
             <img src="img/audit.svg" alt="dsa">
             <h3>Independent audit</h3>
             <p>We are the first platform for investing to cryptocurrencies with independent audit of wallets.
             </p>
         </div>
-        <div class="wallets__content">
+        <div class="features__content">
             <img src="img/paypal.svg" alt="dsa">
             <h3>PayPal deposit</h3>
             <p>You can make a deposit via PayPal, credit card or bank transfer.</p>
         </div>
-        <div class="wallets__content">
+        <div class="features__content">
             <img src="img/money-bag.svg" alt="dsa">
             <h3>Invest small</h3>
             <p>Start investing from just 50€.</p>
         </div>
     </section>
-    <section class="smart__contracts">
+    <section class="smart__contracts" id="demo">
         <img src="img/apple.gif" alt="Iphone">
         <ul>
             <h2>Why trade cryptocurrencies?</h2>
@@ -138,7 +139,7 @@
             <p><a href="#" class="btn">Try demo account</a></p>
         </ul>
     </section>
-    <section class="cryptocurrencies">
+    <section class="cryptocurrencies" id="trade">
         <div class="cryptocurrencies-webinar">
             <h2>How to trade cryptocurrencies</h2>
             <p>The information about current situation on crypto market and how to use its instruments will be available
@@ -243,7 +244,6 @@
             and does not contain advice or recommendations by or on behalf of eToro - Your Social Investment Network.
             Copyright © 2006-2020 Bitcoin Exchange - Your Social Investment Network, All rights reserved.</p>
     </footer>
-
     <script type="text/javascript" src="script.js"></script>
 </body>
 

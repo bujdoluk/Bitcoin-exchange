@@ -92,13 +92,16 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  height: 60vh;
   width: 100%; }
   .header .heading-1 {
     font-size: 6rem;
     font-family: inherit;
     color: white;
     text-align: center;
-    padding-top: 10rem; }
+    padding-top: 10rem;
+    animation: bounce;
+    animation-duration: 1s; }
     @media only screen and (max-width: 68.75rem) {
       .header .heading-1 {
         font-size: 5rem; } }
@@ -137,12 +140,13 @@ body {
           font-size: 1.8rem; } }
 
 .navigation {
-  height: 10vh;
+  height: 7vh;
   padding: 0 4rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  position: absolute; }
   @media only screen and (max-width: 37.5rem) {
     .navigation {
       padding: 0 1.3rem; } }
@@ -168,17 +172,36 @@ body {
     display: flex;
     flex-direction: row;
     list-style: none; }
+    .navigation__bar-item {
+      display: block;
+      padding: 1.5rem 0.5rem 0 0.5rem; }
     .navigation__bar-link {
       font-size: 1.5rem;
       font-family: inherit;
       font-weight: 400;
       text-decoration: none;
-      color: black; }
+      color: black;
+      padding: 0 1rem; }
       @media only screen and (max-width: 37.5rem) {
         .navigation__bar-link {
           font-size: 1.25rem; } }
-    .navigation__bar-item:not(:last-child) {
-      margin-right: 2rem; }
+    .navigation__bar-link::after {
+      content: "";
+      display: block;
+      margin-top: 0.2rem;
+      width: 0;
+      height: 3px;
+      background: var(--color-blue);
+      transition: width 0.3s; }
+    .navigation__bar-link:hover::after {
+      width: 100%; }
+
+#navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: white;
+  z-index: 50; }
 
 .services {
   background-color: var(--color-cadetblue);
@@ -366,7 +389,7 @@ body {
       .testimonials .author {
         font-size: 1.5rem; } }
 
-.wallets {
+.features {
   background-color: white;
   padding: 5rem;
   display: grid;
@@ -374,40 +397,41 @@ body {
   grid-template-rows: 2;
   grid-gap: 7rem; }
   @media only screen and (max-width: 45rem) {
-    .wallets {
+    .features {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: 3;
       grid-gap: 5rem; } }
-  .wallets__content {
+  .features__content {
     display: flex;
     flex-direction: column;
     align-content: space-around;
     align-items: center;
     flex-wrap: wrap; }
-    .wallets__content img {
+    .features__content img {
       height: 6rem;
-      width: 6rem; }
+      width: 6rem;
+      margin-top: 2rem; }
       @media only screen and (max-width: 68.75rem) {
-        .wallets__content img {
+        .features__content img {
           height: 4.8rem;
           width: 4.8rem; } }
       @media only screen and (max-width: 53.1rem) {
-        .wallets__content img {
+        .features__content img {
           height: 3.5rem;
           width: 3.5rem; } }
-    .wallets__content h3 {
+    .features__content h3 {
       font-size: 2.5rem;
       text-align: center;
       margin: 3rem; }
       @media only screen and (max-width: 68.75rem) {
-        .wallets__content h3 {
+        .features__content h3 {
           font-size: 1.8rem;
           margin: 2rem; } }
       @media only screen and (max-width: 53.1rem) {
-        .wallets__content h3 {
+        .features__content h3 {
           font-size: 1.4rem;
           margin: 1.6rem; } }
-    .wallets__content p {
+    .features__content p {
       font-size: 1.5rem;
       text-align: initial;
       -moz-hyphens: auto;
@@ -415,5 +439,5 @@ body {
       -webkit-hyphens: auto;
       hyphens: auto; }
       @media only screen and (max-width: 53.1rem) {
-        .wallets__content p {
+        .features__content p {
           font-size: 1.3rem; } }
