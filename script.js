@@ -29,12 +29,3 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
 }
-
-// Hamburger animation
-const hamburger = document.querySelector(".navigation__hamburger");
-const navBar = document.querySelector(".navigation__bar");
-const links = document.querySelectorAll(".navigation__bar li");
-
-hamburger.addEventListener("click", () => {
-  navBar.classList.toggle("open");
-});
