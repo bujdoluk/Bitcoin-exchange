@@ -1,13 +1,11 @@
 .navigation {
-    height: 7vh;
-    padding: 0 4rem;
+    height: 10vh;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
-    position: absolute;
+    position: relative;
 
     @media only screen and (max-width: $bp-smallest) {
         padding: 0 1.3rem;
@@ -16,6 +14,11 @@
     h1 {
         font-size: 2rem;
         align-self: center;
+        margin-left: 2rem;
+
+        @media only screen and (max-width: $bp-small) {
+            opacity: 0;
+        }
 
         @media only screen and (max-width: $bp-smallest) {
             font-size: 1.4rem;
@@ -25,11 +28,12 @@
     &__logo {
         display: flex;
         flex-direction: row;
+        align-items: center;
+        margin-left: 2rem;
 
         img {
             width: 4.5rem;
             height: 4.5rem;
-            margin-right: 2rem;
 
             @media only screen and (max-width: $bp-smallest) {
                 width: 3.6rem;
@@ -39,18 +43,43 @@
         }
     }
 
+    &__hamburger {
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+
+        &-line {
+            @media only screen and (max-width: $bp-small) {
+                width: 3rem;
+                height: 0.3rem;
+                margin: 0.5rem;
+                background: black;
+                z-index: 50;
+            }
+        }
+    }
+
     &__bar {
         display: flex;
-        flex-direction: row;
+        width: 70%;
+        height: 100%;
+        margin-left: auto;
         list-style: none;
+        justify-content: space-around;
+
+        @media only screen and (max-width: $bp-small) {
+            display: none;
+        }
 
         &-item {
-            display: block;
-            padding: 1.5rem 0.5rem 0 0.5rem;
+            display: flex;
+            align-self: center;
         }
 
         &-link {
-            font-size: 1.5rem;
+            font-size: 1.7rem;
             font-family: inherit;
             font-weight: 400;
             text-decoration: none;
@@ -70,6 +99,10 @@
             height: 3px;
             background: var(--color-blue);
             transition: width 0.3s;
+
+            @media only screen and (max-width: $bp-small) {
+                background: white;
+            }
         }
 
         &-link:hover::after {
@@ -84,5 +117,5 @@
     width: 100%;
     top: 0;
     background-color: white;
-    z-index: 50;
+    z-index: 51;
 }

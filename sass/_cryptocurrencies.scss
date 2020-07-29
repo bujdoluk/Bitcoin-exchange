@@ -37,8 +37,8 @@
         text-decoration: none;
         border: 0.2rem solid var(--color-blue);
         border-radius: 0.3rem;
-        margin-right: 5rem;
         padding: 0.5rem 1rem;
+        margin: 0 auto;
 
         @media only screen and (max-width: $bp-smallest) {
             font-size: 1.8rem;
